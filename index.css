@@ -1,0 +1,17 @@
+.showcase {
+  display: flex !important;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.showcase pre {
+  font-size: 12px;
+}
+
+.showcase pre > code {
+  max-height: 100%;
+}
+
+.showcase > div {
+  width: 50%;
+}
