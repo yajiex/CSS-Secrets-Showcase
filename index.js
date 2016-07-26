@@ -47,5 +47,7 @@
     document.head.appendChild(link);
   };
 
-  appendLink('bounce');
+  Reveal.addEventListener('ready', () => {
+    appendLink('bounce');
+  });
 })();
