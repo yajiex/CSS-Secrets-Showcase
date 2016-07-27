@@ -31,6 +31,7 @@
       parent.appendChild(pre);
       const code = document.createElement('code');
       code.classList.add('hljs');
+      code.classList.add('css');
       code.setAttribute('contenteditable', 'true');
       code.setAttribute('data-trim', 'true');
       code.innerText = codeText;
