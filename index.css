@@ -1,17 +1,16 @@
-.showcase {
-  display: flex !important;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
-.showcase pre {
-  font-size: 12px;
-}
-
-.showcase pre > code {
-  max-height: 100%;
-}
-
-.showcase > div {
+.left, .right {
+  display: inline-block;
   width: 50%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+code {
+  font-size: 12px !important;
 }
