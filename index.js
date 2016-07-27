@@ -27,7 +27,6 @@
 
     const createCode = (parent, codeText) => {
       const pre = document.createElement('pre');
-      pre.classList.add('stretch');
       parent.appendChild(pre);
       const code = document.createElement('code');
       code.classList.add('hljs');
@@ -121,8 +120,24 @@
         ]
       },
       'Transitions & Animations': {
-        'Elastic transitions': ['bounce.html'],
+        'Elastic transitions': [
+          'bounce.html',
+          'elastic.html',
+        ],
         'Frame-by-frame animations': ['frame-by-frame.html'],
+        'Blinking': [
+          'blink.html',
+        ],
+        'Typing animation': [
+          'typing.html',
+        ],
+        'Smooth state animations': [
+          'state-animations.html',
+        ],
+        'Animation along a circular path': [
+          'circular-2elements.html',
+          'circular.html',
+        ]
       },
     };
 
