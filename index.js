@@ -86,9 +86,43 @@
 
   const init = () => {
     const templatesSrc = {
+      'Backgrounds & Borders': {
+        'Translucent borders': ['translucent-borders.html'],
+        'Multiple borders': ['multiple-borders.html'],
+        'Flexible background positioning': [
+          'extended-bg-position.html',
+          'background-origin.html',
+          'background-position-calc.html',
+        ],
+        'Inner rounding': [
+          'inner-rounding.html',
+        ],
+        'Striped backgrounds': [
+          'horizontal-stripes.html',
+          'vertical-stripes.html',
+          'diagonal-stripes.html',
+          'diagonal-stripes-60deg.html',
+          'subtle-stripes.html',
+        ],
+        'Complex background patterns': [
+          'blueprint.html',
+          'polka.html',
+          'checkerboard.html',
+          'checkerboard-svg.html',
+        ],
+        '(Pseudo)random backgrounds': [
+          'cicada-stripes.html',
+        ],
+        'Continuous image borders': [
+          'continuous-image-borders.html',
+          'vintage-envelope.html',
+          'marching-ants.html',
+          'footnote.html',
+        ]
+      },
       'Transitions & Animations': {
-        'Elastic transitions': 'bounce.html',
-        'Frame-by-frame animations': 'frame-by-frame.html',
+        'Elastic transitions': ['bounce.html'],
+        'Frame-by-frame animations': ['frame-by-frame.html'],
       },
     };
 
@@ -106,10 +140,12 @@
       const partVal = templatesSrc[partKey];
       Object.keys(partVal).forEach((chapterKey) => {
         // Elastic transitions - bounce.html
-        const chapterSection = createSection(partRootSection);
         const chapterVal = partVal[chapterKey];
-        appendLink(`src/${partKey}/${chapterKey}/${chapterVal}`, (templateContent) => {
-          injectTemplate(chapterSection, templateContent);
+        chapterVal.forEach((page) => {
+          const chapterSection = createSection(partRootSection);
+          appendLink(`src/${partKey}/${chapterKey}/${page}`, (templateContent) => {
+            injectTemplate(chapterSection, templateContent);
+          });
         });
       });
     });

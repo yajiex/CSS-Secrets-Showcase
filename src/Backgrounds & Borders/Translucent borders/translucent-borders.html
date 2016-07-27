@@ -1,10 +1,10 @@
 <template>
   <style>
-    body {
+    .outer {
       background: url('http://csssecrets.io/images/stone-art.jpg');
     }
 
-    div {
+    .outer > div {
       border: 10px solid hsla(0, 0%, 100%, .5);
       background: white;
       background-clip: padding-box;
@@ -14,15 +14,20 @@
       padding: 2em;
       margin: 2em auto 0;
       font: 100%/1.5 sans-serif;
+      color: black;
     }
   </style>
   <x-element>
-    <div>
-      Can I haz semi-transparent borders?
-      Pretty please?
+    <div class="outer">
+      <div>
+        Can I haz semi-transparent borders?
+        Pretty please?
+      </div>
     </div>
   </x-element>
   <x-notes>
-    bounce
+    translucent-borders
+    RGBA/HSLA colors
+    background-clip
   </x-notes>
 </template>
