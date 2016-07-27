@@ -139,6 +139,34 @@
           'circular.html',
         ]
       },
+      'User Experience': {
+        'Picking the right cursor': [
+          'disabled.html',
+        ],
+        'Extending the clickable area': [
+          'hit-area-border.html',
+          'hit-area.html',
+        ],
+        'Custom checkboxes': [
+          'checkboxes.html',
+          'toggle-buttons.html',
+        ],
+        'De-emphasize by dimming': [
+          'dimming-box-shadow.html',
+          // TODO: JS in templates (not importNode)
+          'native-modal.html',
+        ],
+        'De-emphasize by blurring': [
+          // TODO: JS in templates (not importNode)
+          'deemphasizing-blur.html',
+        ],
+        'Scrolling hints': [
+          'scrolling-hints.html',
+        ],
+        'Interactive image comparison': [
+          'image-slider.html',
+        ]
+      }
     };
 
     const createSection = (parent) => {
