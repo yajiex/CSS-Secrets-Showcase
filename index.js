@@ -34,6 +34,7 @@
       code.classList.add('css');
       code.setAttribute('contenteditable', 'true');
       code.setAttribute('data-trim', 'true');
+      code.setAttribute('data-noescape', 'true');
       code.innerText = codeText;
       pre.appendChild(code);
       return code;
