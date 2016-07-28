@@ -1,0 +1,73 @@
+<template>
+  <style>
+    * {
+      text-align: left;
+    }
+
+    pre {
+      font-size: 12px;
+      color: black;
+      padding: .5em;
+      line-height: 1.5;
+      background: hsl(20, 50%, 95%);
+      font-family: Consolas, Monaco, monospace;
+    }
+
+    pre:nth-of-type(2) {
+      tab-size: 2
+    }
+
+    pre:nth-of-type(3) {
+      tab-size: 4
+    }
+
+    pre:nth-of-type(4) {
+      tab-size: 0
+    }
+
+    code {
+      font: inherit;
+    }
+  </style>
+  <x-element>
+    <pre><code>// Default tab size
+while (true) {
+	var d = new Date();
+	if (d.getDate()==1 &amp;&amp;
+	    d.getMonth()==3) {
+		alert("TROLOLOL");
+	}
+}</code></pre>
+
+    <pre><code>// tab-size: 2;
+while (true) {
+	var d = new Date();
+	if (d.getDate()==1 &amp;&amp;
+	    d.getMonth()==3) {
+		alert("TROLOLOL");
+	}
+}</code></pre>
+
+    <pre><code>// tab-size: 4;
+while (true) {
+	var d = new Date();
+	if (d.getDate()==1 &amp;&amp;
+	    d.getMonth()==3) {
+		alert("TROLOLOL");
+	}
+}</code></pre>
+
+    <pre><code>// tab-size: 0;
+while (true) {
+	var d = new Date();
+	if (d.getDate()==1 &amp;&amp;
+	    d.getMonth()==3) {
+		alert("TROLOLOL");
+	}
+}</code></pre>
+  </x-element>
+  <x-notes>
+    tab-size
+    tab-size
+  </x-notes>
+</template>

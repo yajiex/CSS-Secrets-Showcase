@@ -219,6 +219,41 @@
           'folded-corner-realistic.html',
 
         ]
+      },
+      'Typography': {
+        'Hyphenation': [
+          // TODO: Chrome doesn't support hyphens
+          'hyphenation.html',
+        ],
+        'Inserting line breaks': [
+          'line-breaks.html',
+        ],
+        'Zebra-striped text lines': [
+          'zebra-lines.html',
+        ],
+        'Adjusting tab width': [
+          'tab-size.html',
+        ],
+        'Ligatures': [
+          'ligatures.html',
+        ],
+        'Fancy ampersands': [
+          // TODO: not work in Chrome
+          'ampersands.html',
+        ],
+        'Custom underlines': [
+          'underlines.html',
+          'wavy-underlines.html',
+        ],
+        'Realistic text effects': [
+          'letterpress.html',
+          'stroked-text.html',
+          'glow.html',
+          'extruded.html',
+        ],
+        'Circular text': [
+          'circular-text.html',
+        ]
       }
     };
 
