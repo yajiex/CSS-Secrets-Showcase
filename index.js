@@ -196,6 +196,29 @@
           // TODO: JS in templates (not importNode)
           'pie-svg.html',
         ]
+      },
+      'Visual Effects': {
+        'One-sided shadows': [
+          'shadow-one-side.html',
+          'shadow-2-sides.html',
+          'shadow-opposite-sides.html',
+        ],
+        'Irregular drop shadows': [
+          'drop-shadow.html',
+        ],
+        'Color tinting': [
+          'color-tint-filter.html',
+          'color-tint.html',
+        ],
+        'Frosted glass effect': [
+          // TODO: <body>
+          'frosted-glass.html',
+        ],
+        'Folded corner effect': [
+          'folded-corner.html',
+          'folded-corner-realistic.html',
+
+        ]
       }
     };
 

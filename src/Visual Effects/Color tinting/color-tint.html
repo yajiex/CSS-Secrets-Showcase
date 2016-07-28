@@ -1,0 +1,23 @@
+<template>
+  <style>
+    .tinted-image {
+      width: 640px;
+      height: 440px;
+      background-size: cover;
+      background-color: hsl(335, 100%, 50%);
+      background-blend-mode: luminosity;
+      transition: .5s background-color;
+    }
+
+    .tinted-image:hover {
+      background-color: transparent;
+    }
+  </style>
+  <x-element>
+    <div style="background-image:url(http://csssecrets.io/images/tiger.jpg)" class="tinted-image"></div>
+  </x-element>
+  <x-notes>
+    color-tint
+    background-blend-mode
+  </x-notes>
+</template>
