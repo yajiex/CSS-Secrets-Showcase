@@ -1,0 +1,35 @@
+<template>
+  <style>
+
+    div {
+      display: inline-block;
+      width: 200px;
+      height: 150px;
+      margin: 10px;
+      background: #fb3;
+      border-radius: 50% / 100% 100% 0 0;
+    }
+
+    div:nth-of-type(2) {
+      border-radius: 50% / 0 0 100% 100%;
+    }
+
+    div:nth-of-type(3) {
+      border-radius: 100% 0 0 100% / 50%;
+    }
+
+    div:nth-of-type(4) {
+      border-radius: 0 100% 100% 0 / 50%;
+    }
+  </style>
+  <x-element>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </x-element>
+  <x-notes>
+    half-ellipse
+    border-radius
+  </x-notes>
+</template>

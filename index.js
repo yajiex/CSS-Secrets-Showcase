@@ -166,6 +166,36 @@
         'Interactive image comparison': [
           'image-slider.html',
         ]
+      },
+      'Shapes': {
+        'Flexible ellipses': [
+          'ellipse.html',
+          'half-ellipse.html',
+          'quarter-ellipse.html',
+        ],
+        'Parallelograms': [
+          'parallelograms.html',
+          'parallelograms-pseudo.html',
+        ],
+        'Diamond images': [
+          'diamond-images.html',
+          'diamond-clip.html',
+        ],
+        'Cutout corners': [
+          'bevel-corners-gradients.html',
+          'scoop-corners.html',
+          'bevel-corners.html',
+          'bevel-corners-clipped.html',
+        ],
+        'Trapezoid tabs': [
+          'trapezoid-tabs.html',
+        ],
+        'Simple pie charts': [
+          'pie-animated.html',
+          'pie-static.html',
+          // TODO: JS in templates (not importNode)
+          'pie-svg.html',
+        ]
       }
     };
 

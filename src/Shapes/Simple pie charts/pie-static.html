@@ -1,0 +1,73 @@
+<template>
+  <style>
+    .pie {
+      display: inline-block;
+      position: relative;
+      width: 100px;
+      line-height: 100px;
+      border-radius: 50%;
+      background: yellowgreen;
+      background-image: linear-gradient(to right, transparent 50%, #655 0);
+      color: transparent;
+      text-align: center;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(.5turn);
+      }
+    }
+
+    @keyframes bg {
+      50% {
+        background: #655;
+      }
+    }
+
+    .pie::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 50%;
+      height: 100%;
+      border-radius: 0 100% 100% 0 / 50%;
+      background-color: inherit;
+      transform-origin: left;
+      animation: spin 50s linear infinite, bg 100s step-end infinite;
+      animation-play-state: paused;
+      animation-delay: inherit;
+    }
+
+    div:nth-of-type(1) {
+      animation-delay: -0s;
+    }
+
+    div:nth-of-type(2) {
+      animation-delay: -20s;
+    }
+
+    div:nth-of-type(3) {
+      animation-delay: -40s;
+    }
+
+    div:nth-of-type(4) {
+      animation-delay: -60s;
+    }
+
+    div:nth-of-type(5) {
+      animation-delay: -80s;
+    }
+  </style>
+  <x-element>
+    <div class="pie">0%</div>
+    <div class="pie">20%</div>
+    <div class="pie">40%</div>
+    <div class="pie">60%</div>
+    <div class="pie">80%</div>
+  </x-element>
+  <x-notes>
+    pie-animated
+    animation-deplay
+  </x-notes>
+</template>

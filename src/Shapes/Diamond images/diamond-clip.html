@@ -1,0 +1,25 @@
+<template>
+  <style>
+    img {
+      max-width: 250px;
+      margin: 20px;
+      -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+      clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+      transition: 1s;
+    }
+
+    img:hover {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  </style>
+  <x-element>
+    <img src="http://csssecrets.io/images/adamcatlace.jpg"/>
+    <img src="http://csssecrets.io/images/adam-sleeping.jpg"/>
+  </x-element>
+  <x-notes>
+    diamond-clips
+    clip-path
+    polygon
+  </x-notes>
+</template>
