@@ -119,54 +119,6 @@
           'footnote.html',
         ]
       },
-      'Transitions & Animations': {
-        'Elastic transitions': [
-          'bounce.html',
-          'elastic.html',
-        ],
-        'Frame-by-frame animations': ['frame-by-frame.html'],
-        'Blinking': [
-          'blink.html',
-        ],
-        'Typing animation': [
-          'typing.html',
-        ],
-        'Smooth state animations': [
-          'state-animations.html',
-        ],
-        'Animation along a circular path': [
-          'circular-2elements.html',
-          'circular.html',
-        ]
-      },
-      'User Experience': {
-        'Picking the right cursor': [
-          'disabled.html',
-        ],
-        'Extending the clickable area': [
-          'hit-area-border.html',
-          'hit-area.html',
-        ],
-        'Custom checkboxes': [
-          'checkboxes.html',
-          'toggle-buttons.html',
-        ],
-        'De-emphasize by dimming': [
-          'dimming-box-shadow.html',
-          // TODO: JS in templates (not importNode)
-          'native-modal.html',
-        ],
-        'De-emphasize by blurring': [
-          // TODO: JS in templates (not importNode)
-          'deemphasizing-blur.html',
-        ],
-        'Scrolling hints': [
-          'scrolling-hints.html',
-        ],
-        'Interactive image comparison': [
-          'image-slider.html',
-        ]
-      },
       'Shapes': {
         'Flexible ellipses': [
           'ellipse.html',
@@ -254,7 +206,82 @@
         'Circular text': [
           'circular-text.html',
         ]
-      }
+      },
+      'User Experience': {
+        'Picking the right cursor': [
+          'disabled.html',
+        ],
+        'Extending the clickable area': [
+          'hit-area-border.html',
+          'hit-area.html',
+        ],
+        'Custom checkboxes': [
+          'checkboxes.html',
+          'toggle-buttons.html',
+        ],
+        'De-emphasize by dimming': [
+          'dimming-box-shadow.html',
+          // TODO: JS in templates (not importNode)
+          'native-modal.html',
+        ],
+        'De-emphasize by blurring': [
+          // TODO: JS in templates (not importNode)
+          'deemphasizing-blur.html',
+        ],
+        'Scrolling hints': [
+          'scrolling-hints.html',
+        ],
+        'Interactive image comparison': [
+          'image-slider.html',
+        ]
+      },
+      'Structure & Layout': {
+        'Intrinsic sizing': [
+          'intrinsic-sizing.html',
+        ],
+        'Taming table column widths': [
+          'table-column-widths.html',
+        ],
+        'Styling by sibling count': [
+          // TODO: JS in templates (not importNode)
+          'styling-sibling-count.html',
+        ],
+        'Fluid background, fixed content': [
+          'fluid-fixed.html',
+        ],
+        'Vertical centering': [
+          'vertical-centering-abs.html',
+          // TODO: related with 50vh viewport
+          'vertical-centering-vh.html',
+          'vertical-centering.html',
+        ],
+        'Sticky footers': [
+          // TODO: related with 100vh viewport
+          'sticky-footer-fixed.html',
+          // TODO: related with 100vh viewport
+          'sticky-footer.html',
+        ]
+      },
+      'Transitions & Animations': {
+        'Elastic transitions': [
+          'bounce.html',
+          'elastic.html',
+        ],
+        'Frame-by-frame animations': ['frame-by-frame.html'],
+        'Blinking': [
+          'blink.html',
+        ],
+        'Typing animation': [
+          'typing.html',
+        ],
+        'Smooth state animations': [
+          'state-animations.html',
+        ],
+        'Animation along a circular path': [
+          'circular-2elements.html',
+          'circular.html',
+        ]
+      },
     };
 
     const createSection = (parent) => {

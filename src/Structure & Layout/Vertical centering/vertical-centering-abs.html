@@ -1,0 +1,47 @@
+<template>
+  <style>
+    main {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      padding: 1em 1.5em;
+      box-sizing: border-box;
+      background: #655;
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 .2em;
+      font-size: 150%;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    div {
+      /* style */
+      background: #fb3;
+      font: 100%/1.5 sans-serif;
+      position: relative;
+      width: 600px;
+      height: 600px;
+    }
+  </style>
+  <x-element>
+    <div>
+      <main>
+        <h1>Am I centered yet?</h1>
+        <p>Center me, please!</p>
+      </main>
+    </div>
+  </x-element>
+  <x-notes>
+    vertical-centering-abs
+    transform
+    translate
+  </x-notes>
+</template>
